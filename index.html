@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Portfolio</title>
+  <meta name="description" content="Portfolio Template for Developer"/>
+
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <span class="header__logo-sub">Redouane Choukhi</span>
+      </div>
+      <div class="header__main">
+
+        <ul class="header__links">
+          <li class="header__link-wrapper"><a href="./index.html" class="header__link"> Accueil </a></li>
+          <li class="header__link-wrapper"><a href="./index.html#about" class="header__link">About</a></li>
+          <li class="header__link-wrapper"><a href="./index.html#projects" class="header__link">Projets</a></li>
+          <li class="header__link-wrapper"><a href="./index.html#E4" class="header__link"> Epreuve E4</a></li>
+          <li class="header__link-wrapper"><a href="./index.html#veille" class="header__link"> Veille Informatique</a></li>
+        </ul>
+
+        <div class="header__main-ham-menu-cont">
+          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu"/>
+          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close" class="header__main-ham-menu-close d-none"/>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link">
+            <a href="./index.html"> Accueil </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#about"> About </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#projects"> Projets </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#E4"> E4 </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#contact"> Veille Informatique </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="home-hero">
+
+    <div class="home-hero__content">
+      <h1 class="heading-primary">Hey, Redouane Choukhi</h1>
+      <div class="home-hero__info">
+        <span class="heading-sec__sub heading-sec__sub--lt">
+          Extrêmement motivé pour développer constamment mes compétences et évoluer
+          professionnellement. Je suis confiant dans ma capacité à proposer des idées intéressantes
+          à l'équipe et à partager nos expériences individuelles.
+        </span>
+
+      </div>
+      <div class="home-hero__cta">
+        <a href="./#projects" class="btn btn--bg">Projets</a>
+      </div>
+    </div>
+
+    <div class="home-hero__socials">
+      <div class="home-hero__social">
+        <a href="#" class="home-hero__social-icon-link">
+          <img src="./assets/png/linkedin-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="#" class="home-hero__social-icon-link">
+          <img src="./assets/png/github-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+    </div>
+
+    <div class="home-hero__mouse-scroll-cont">
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+ <!-- <section id="about" class="about sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">About Me</span>
+        <span class="heading-sec__sub">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+          tempora explicabo quae quod deserunt eius sapiente
+        </span>
+      </h2>
+      <div class="about__content">
+        <div class="about__content-main">
+          <h3 class="about__content-title">Get to know me!</h3>
+          <div class="about__content-details">
+            <p class="about__content-details-para">
+              Hey! It's
+              <strong>John Doe</strong>
+              and I'm a <strong> Frontend Web Developer </strong> located in
+              Los Angeles. I've done
+              <strong> remote </strong>
+              projects for agencies, consulted for startups, and collaborated
+              with talented people to create
+              <strong>digital products </strong>
+              for both business and consumer use.
+            </p>
+            <p class="about__content-details-para">
+              I'm a bit of a digital product junky. Over the years, I've used
+              hundreds of web and mobile apps in different industries and
+              verticals. Feel free to
+              <strong>contact</strong> me here.
+            </p>
+          </div>
+          <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
+        </div>
+        <div class="about__content-skills">
+          <h3 class="about__content-title">Compétences</h3>
+          <div class="skills">
+            <div class="skills__skill">HTML</div>
+            <div class="skills__skill">CSS</div>
+            <div class="skills__skill">JavaScript</div>
+            <div class="skills__skill">React</div>
+            <div class="skills__skill">GIT</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Projets</span>
+        <span class="heading-sec__sub">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+          tempora explicabo quae quod deserunt eius sapiente
+        </span>
+      </h2>
+
+      <div class="projects__content">
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/png/MarieTeam.PNG" alt="Software Screenshot" class="projects__row-img" loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">MarieTeam</h3>
+            <p class="projects__row-content-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              facilis tempora, explicabo quae quod deserunt eius sapiente
+              praesentium.
+            </p>
+            <a href="./project-1.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">en savoir plus</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/jpeg/project-mockup-example.jpeg" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Obarbeuc</h3>
+            <p class="projects__row-content-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              facilis tempora, explicabo quae quod deserunt eius sapiente
+              praesentium.
+            </p>
+            <a href="./project-2.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">en savoir plus</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets/jpeg/project-mockup-example.jpeg" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">E-comshop</h3>
+            <p class="projects__row-content-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              facilis tempora, explicabo quae quod deserunt eius sapiente
+              praesentium.
+            </p>
+            <a href="./project-3.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">en savoir plus</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>-->
+
+  <section id="E4" class="about sec-pad dynamicBg">
+
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">Synthèse épreuve E4</span>
+        <span class="heading-sec__sub">Vous trouverez ci-dessous, le tableau de synthèse à presenter lors de l'epreuve E4 du BTS</span>
+      </h2>
+    </div>
+
+    <div class="service" id="service">
+
+      <div class="mycontainer">
+
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+          <h2>Tableau de synthèse de l'épreuve E4</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+
+            <table class="table tableau" width="100%">
+              <thead>
+                <tr>
+                  <th scope="col">Compétences</th>
+                  <th scope="col" class="e4_table_icon_box">Date</th>
+                  <th scope="col" class="e4_table_icon_box">Patrimoine</th>
+                  <th scope="col" class="e4_table_icon_box">Incidents / Demandes</th>
+                  <th scope="col" class="e4_table_icon_box">Présence</th>
+                  <th scope="col" class="e4_table_icon_box">Projet</th>
+                  <th scope="col" class="e4_table_icon_box">Service</th>
+                  <th scope="col" class="e4_table_icon_box">Développement</th>
+                </tr>
+                
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td colspan="8" style="background-color: rgba(0, 98, 185, 0.8); color: white; font-weight: bold; text-align: center;">
+                    Réalisation en cours de formations</td>
+                </tr>
+
+                <tr>
+                  <th scope="row" ><a href="file\Veille%20informatique.pdf" target="_blank" class="logo_e4">Création d'un Active Directory sous windows server 2016</a></th>
+                  <td>11/01/2022</td>
+                  <td scope="col" class="e4_table_icon_box">X</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><a href="file\Veille%20informatique.pdf" target="_blank" class="logo_e4">Serveur Messagerie THUNDERBIRD</a></th>
+                  <td>20/02/2022</td>
+                  <td scope="col" class="e4_table_icon_box">X</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><a href="file\Veille%20informatique.pdf" target="_blank" class="logo_e4">Répartition des charges sur serveurs web avec Haproxy</a></th>
+                  <td>12/11/2022</td>
+                  <td scope="col" class="e4_table_icon_box">X</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><a href="file\Veille%20informatique.pdf" target="_blank" class="logo_e4">Sauvegarde et restauration sur windows</a></th>
+                  <td>20/02/2022</td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><a href="assets\pdf\Veille informatique.pdf" target="_blank" class="logo_e4">Veille informationelle VPN</a></th>
+                  <td scope="col" class="e4_table_icon_box" >2022-2023</td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><a href="file\Veille%20informatique.pdf" target="_blank" class="logo_e4">Projet MarieTeam</a></th>
+                  <td>2022-2023</td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><a href="file\Veille%20informatique.pdf" target="_blank" class="logo_e4">Projet Obarbeuc</a></th>
+                  <td>2022</td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td colspan="8"
+                    style="background-color: rgba(0, 98, 185, 0.8); color: white; font-weight: bold; text-align: center;">
+                    Réalisations en milieu professionnel en cours de Première Année
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><a href="file\Veille%20informatique.pdf" target="_blank" class="logo_e4">Projet E-commerce</a></th>
+                  <td>09/05/2022-24/06/2022</td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td colspan="8" style="background-color: rgba(0, 98, 185, 0.8); color: white; font-weight: bold; text-align: center;">
+                    Réalisations en milieu professionnel en cours de Seconde Année
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><a href="file\Veille%20informatique.pdf" target="_blank" class="logo_e4">Projet Moniteur PHP</a></th>
+                  <td>03/01/2023-10/02/2023</td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                  <td></td>
+                  <td></td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                  <td></td>
+                  <td scope="col" class="e4_table_icon_box" >X</td>
+                </tr>
+              </tbody>
+            </table>           
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <!--<section id="Veille" class="contact sec-pad dynamicBg">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main heading-sec__main--lt">Veille Informatique</span>
+        <span class="heading-sec__sub heading-sec__sub--lt">
+          Au cours de ma deuxième année de BTS, j'ai mis en place une veille informatique
+        </span>
+      </h2>
+      <div class="contact__form-container">
+        <form action="#" class="contact__form">
+          <button type="submit" class="btn btn--theme contact__btn">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>-->
+
+  <footer class="main-footer">
+    <div class="main-container">
+      <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+      <div class="main-footer__lower">
+        &copy; Copyright 2021. Made by
+        <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com">Redouane Choukhi</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
